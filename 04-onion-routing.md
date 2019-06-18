@@ -98,6 +98,9 @@ There are a number of conventions adhered to throughout this document:
     - The legacy `hop_data` is identified by a single `0x00`-byte prefix
 	- The variable length `hop_payload` is prefixed with a `varint` encoding
       the length in bytes, excluding the prefix and the trailing HMAC.
+ - This specification makes us of available length encoded integer format,
+   referred to as `varint`, in various places. Please see the Bitcoin protocol
+   documentation for [CompactSize][varint] for implementation details.
 
 # Key Generation
 
@@ -1046,3 +1049,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [fips198]: http://csrc.nist.gov/publications/fips/fips198-1/FIPS-198-1_final.pdf
 [sec2]: http://www.secg.org/sec2-v2.pdf
 [rfc7539]: https://tools.ietf.org/html/rfc7539
+[varint]: https://en.bitcoin.it/wiki/Protocol_documentation#Variable_length_integer
