@@ -34,7 +34,7 @@ To make a payment, a participant needs to know what channels it can send through
 
 A participant receives invoices that tell her what payments to make.
 
-## Implementions
+## Implementations
 * [Qtum Eclair](https://github.com/qtumproject/lightning-demo)
 * [qtum-lightning](https://github.com/qtumproject/qtum-lightning)
 
